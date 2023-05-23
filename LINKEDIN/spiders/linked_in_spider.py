@@ -37,9 +37,7 @@ class LinkedInSpider(scrapy.Spider):
 
             data.append(job)
 
-
         import json
 
         with open("job_search.json", 'w') as json_file:
             json.dump(data, json_file, indent=4)
-
